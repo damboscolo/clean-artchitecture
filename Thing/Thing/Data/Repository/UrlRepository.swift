@@ -9,13 +9,13 @@
 import Foundation
 
 protocol UrlDataSource {
-    func getShortenerUrl(from url: String, success: ((UrlModel) -> Void), error: ((Error) -> Void))
+    func getShortenerUrl(from url: String, completion: ((Result<ShortUrlModel>) -> Void))
 }
 
 struct UrlRepository {
     var remote: UrlDataSource
     
-    func perform(from url: String, success: ((UrlModel) -> Void), error: ((Error) -> Void)) {
-        remote.getShortenerUrl(from: url, success: success, error: error)
+    func getShortenerUrl(from url: String, completion: ((Result<ShortUrlModel>) -> Void)) {
+        remote.getShortenerUrl(from: url, completion: completion)
     }
 }

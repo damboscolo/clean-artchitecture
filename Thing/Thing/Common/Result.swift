@@ -1,5 +1,5 @@
 //
-//  UrlModel.swift
+//  Result.swift
 //  Thing
 //
 //  Created by Daniele Boscolo on 14/06/18.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-struct UrlModel {
-    let base: String
+enum Result<T> {
+    case success(T)
+    case failure(Error)
 }

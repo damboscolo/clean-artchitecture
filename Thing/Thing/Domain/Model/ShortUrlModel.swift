@@ -1,5 +1,5 @@
 //
-//  GetShortenerUrlError.swift
+//  UrlModel.swift
 //  Thing
 //
 //  Created by Daniele Boscolo on 14/06/18.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-enum GetShortenerUrlError: Error {
-    case invalidFormat
+struct ShortUrlModel {
+    let base: String
 }
-

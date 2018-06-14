@@ -9,13 +9,13 @@
 import UIKit
 
 protocol ShortenerRouterProtocol {
-    func navigateToLogin()
+    func navigateToNext()
 }
 
 struct ShortenerRouter: ShortenerRouterProtocol {
     var view: ShortenerView!
     
-    func navigateToLogin() {
+    func navigateToNext() {
         guard let view = view as? UIViewController else { return }
         view.performSegue(withIdentifier: "shortenerToLogin", sender: nil)
     }

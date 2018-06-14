@@ -17,20 +17,25 @@ protocol ShortenerPresenterProtocol {
 struct ShortenerPresenter: ShortenerPresenterProtocol, ErrorPresenter {    
     var view: ShortenerView!
     var router: ShortenerRouter!
-    var useCase: GetShortenerUrlUseCase!
+    var getShortenerUrlUseCase: GetShortenerUrlUseCase!
     
     func shortUrl(_ url: String) {
-        let request = GetShortenerUrlUseCase.Request(url: url)
-        useCase.execute(with: request, success: { (model) in
-            
-            let viewModel = ShortenerViewModels.ShortenerViewModel(url: model.base)
-            view.displayShortedUrl(viewModel)
-            
-        }) { (error) in
-            if let genericError = handleGenericError(error) {
-                view.display(genericError)
-            } else {
-                view.display(handleSpecificError(error))
+        
+        view.showLoading()
+        getShortenerUrlUseCase.execute(with: url) { (result) in
+            view.hideLoading()
+
+            switch result {
+            case .success(let model):
+                let viewModel = ShortenerViewModels.ShortenerViewModel(url: model.base)
+                view.displayShortedUrl(viewModel)
+                
+            case .failure(let error):
+                if let genericError = handleGenericError(error) {
+                    view.display(genericError)
+                } else {
+                    view.display(handleSpecificError(error))
+                }
             }
         }
     }
@@ -39,8 +44,7 @@ struct ShortenerPresenter: ShortenerPresenterProtocol, ErrorPresenter {
 extension ShortenerPresenter {
     func handleSpecificError(_ error: Error) -> DisplayableError {
         guard let error = error as? GetShortenerUrlError else {
-            // generic error
-            return DisplayableError()
+            return DisplayableError() // generic error
         }
         switch error {
         case .invalidFormat:

@@ -12,9 +12,8 @@ protocol LoginViewProtocol: class, ErrorDisplayerView {
     var presenter: LoginPresenterProtocol! {get set}
 }
 
-class LoginViewController: UIViewController, LoginViewProtocol, Loadable {
+class LoginViewController: UIViewController, LoginViewProtocol {
     var presenter: LoginPresenterProtocol!
-    var loadingView: FullScreenLoadingView! = FullScreenLoadingView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +22,9 @@ class LoginViewController: UIViewController, LoginViewProtocol, Loadable {
     }
     
     func doLogin() {
-        startLoading()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
             guard let weakSelf = self else { return }
             weakSelf.presenter.login()
-            weakSelf.stopLoading()
         }
     }
 }

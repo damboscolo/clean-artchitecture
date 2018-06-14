@@ -16,13 +16,15 @@
 		834F9D5D20D326090052D9EC /* GetShortenerUrlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D5C20D326090052D9EC /* GetShortenerUrlError.swift */; };
 		834F9D5F20D326B10052D9EC /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D5E20D326B10052D9EC /* ErrorPresenter.swift */; };
 		834F9D6220D329830052D9EC /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6120D329830052D9EC /* DataError.swift */; };
+		834F9D6520D33B910052D9EC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6420D33B910052D9EC /* Result.swift */; };
+		834F9D6720D33EB30052D9EC /* ScenesDependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6620D33EB30052D9EC /* ScenesDependencyInjection.swift */; };
+		834F9D6920D33ED80052D9EC /* ShortenerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6820D33ED80052D9EC /* ShortenerConfigurator.swift */; };
+		834F9D6D20D341890052D9EC /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6C20D341890052D9EC /* DependencyInjection.swift */; };
 		838A943D20CCCFDB007EBC2C /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DA7D9C20CCCBDE001B2002 /* RxBlocking.framework */; };
 		838A943E20CCCFDB007EBC2C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DA7D9920CCCBDD001B2002 /* RxCocoa.framework */; };
 		838A943F20CCCFDB007EBC2C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DA7D9A20CCCBDD001B2002 /* RxSwift.framework */; };
 		838A944A20CCDE5B007EBC2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A944820CCDE5B007EBC2C /* LoginViewController.swift */; };
 		838A944B20CCDE5B007EBC2C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 838A944920CCDE5B007EBC2C /* LoginViewController.xib */; };
-		838A945120CCE152007EBC2C /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A945020CCE152007EBC2C /* Loadable.swift */; };
-		838A945D20CDA22C007EBC2C /* FullScreenLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A945C20CDA22C007EBC2C /* FullScreenLoadingView.swift */; };
 		83A5B9D620CDFE8400D0ED18 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A5B9D520CDFE8400D0ED18 /* SnapKit.framework */; };
 		83A5B9DA20CE069100D0ED18 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5B9D920CE069100D0ED18 /* LoginPresenter.swift */; };
 		83A5B9DC20CE07D800D0ED18 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5B9DB20CE07D800D0ED18 /* LoginConfigurator.swift */; };
@@ -32,7 +34,7 @@
 		83CBAACD20D3062700C8630D /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CBAAC920D3062700C8630D /* Swinject.framework */; };
 		83CBAACE20D3062700C8630D /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CBAACA20D3062700C8630D /* SwinjectStoryboard.framework */; };
 		83CBAAD020D3071400C8630D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CBAACF20D3071400C8630D /* Result.framework */; };
-		83CBAAD820D3099000C8630D /* UrlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBAAD720D3099000C8630D /* UrlModel.swift */; };
+		83CBAAD820D3099000C8630D /* ShortUrlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBAAD720D3099000C8630D /* ShortUrlModel.swift */; };
 		83CBAADA20D309FE00C8630D /* UrlRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBAAD920D309FE00C8630D /* UrlRemoteDataSource.swift */; };
 		83CBAADC20D30A0A00C8630D /* UrlRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBAADB20D30A0A00C8630D /* UrlRepository.swift */; };
 		83CBAAE020D30B2B00C8630D /* UrlProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBAADF20D30B2B00C8630D /* UrlProvider.swift */; };
@@ -73,10 +75,12 @@
 		834F9D5C20D326090052D9EC /* GetShortenerUrlError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShortenerUrlError.swift; sourceTree = "<group>"; };
 		834F9D5E20D326B10052D9EC /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
 		834F9D6120D329830052D9EC /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		834F9D6420D33B910052D9EC /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		834F9D6620D33EB30052D9EC /* ScenesDependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenesDependencyInjection.swift; sourceTree = "<group>"; };
+		834F9D6820D33ED80052D9EC /* ShortenerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortenerConfigurator.swift; sourceTree = "<group>"; };
+		834F9D6C20D341890052D9EC /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 		838A944820CCDE5B007EBC2C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		838A944920CCDE5B007EBC2C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		838A945020CCE152007EBC2C /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
-		838A945C20CDA22C007EBC2C /* FullScreenLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenLoadingView.swift; sourceTree = "<group>"; };
 		83A5B9D520CDFE8400D0ED18 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		83A5B9D920CE069100D0ED18 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		83A5B9DB20CE07D800D0ED18 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
@@ -86,7 +90,7 @@
 		83CBAAC920D3062700C8630D /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		83CBAACA20D3062700C8630D /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
 		83CBAACF20D3071400C8630D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		83CBAAD720D3099000C8630D /* UrlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlModel.swift; sourceTree = "<group>"; };
+		83CBAAD720D3099000C8630D /* ShortUrlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortUrlModel.swift; sourceTree = "<group>"; };
 		83CBAAD920D309FE00C8630D /* UrlRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlRemoteDataSource.swift; sourceTree = "<group>"; };
 		83CBAADB20D30A0A00C8630D /* UrlRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlRepository.swift; sourceTree = "<group>"; };
 		83CBAADF20D30B2B00C8630D /* UrlProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProvider.swift; sourceTree = "<group>"; };
@@ -146,10 +150,11 @@
 		834F9D4F20D31F940052D9EC /* Shortener */ = {
 			isa = PBXGroup;
 			children = (
-				834F9D5020D31FAC0052D9EC /* ShortenerViewController.swift */,
-				834F9D5920D323A10052D9EC /* ShortenerRouter.swift */,
-				834F9D5420D320340052D9EC /* ShortenerViewModels.swift */,
 				834F9D5220D31FBF0052D9EC /* ShortenerPresenter.swift */,
+				834F9D5920D323A10052D9EC /* ShortenerRouter.swift */,
+				834F9D6820D33ED80052D9EC /* ShortenerConfigurator.swift */,
+				834F9D5020D31FAC0052D9EC /* ShortenerViewController.swift */,
+				834F9D5420D320340052D9EC /* ShortenerViewModels.swift */,
 			);
 			path = Shortener;
 			sourceTree = "<group>";
@@ -170,6 +175,31 @@
 			path = Error;
 			sourceTree = "<group>";
 		};
+		834F9D6320D33B8B0052D9EC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				834F9D6420D33B910052D9EC /* Result.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		834F9D6A20D341260052D9EC /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				834F9D6B20D341310052D9EC /* Depnedency Injection */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		834F9D6B20D341310052D9EC /* Depnedency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				834F9D6C20D341890052D9EC /* DependencyInjection.swift */,
+				834F9D6620D33EB30052D9EC /* ScenesDependencyInjection.swift */,
+			);
+			path = "Depnedency Injection";
+			sourceTree = "<group>";
+		};
 		838A944520CCDE39007EBC2C /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,25 +215,16 @@
 		838A945620CD7A92007EBC2C /* Error */ = {
 			isa = PBXGroup;
 			children = (
+				83A5B9E520CE0E8F00D0ED18 /* DisplayableError.swift */,
 				8322DF0A20D0C2F5003F7541 /* ErrorDisplayerView.swift */,
 				834F9D5E20D326B10052D9EC /* ErrorPresenter.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
 		};
-		838A945B20CDA221007EBC2C /* LoadingView */ = {
-			isa = PBXGroup;
-			children = (
-				838A945020CCE152007EBC2C /* Loadable.swift */,
-				838A945C20CDA22C007EBC2C /* FullScreenLoadingView.swift */,
-			);
-			path = LoadingView;
-			sourceTree = "<group>";
-		};
 		83A5B9DD20CE098600D0ED18 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				83A5B9E020CE0A0100D0ED18 /* Error Common */,
 				83A5B9DF20CE099300D0ED18 /* Common */,
 				83A5B9DE20CE098C00D0ED18 /* UI */,
 			);
@@ -223,23 +244,14 @@
 			isa = PBXGroup;
 			children = (
 				838A945620CD7A92007EBC2C /* Error */,
-				838A945B20CDA221007EBC2C /* LoadingView */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		83A5B9E020CE0A0100D0ED18 /* Error Common */ = {
-			isa = PBXGroup;
-			children = (
-				83A5B9E520CE0E8F00D0ED18 /* DisplayableError.swift */,
-			);
-			path = "Error Common";
 			sourceTree = "<group>";
 		};
 		83CBAAD120D3084A00C8630D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				83CBAADD20D30AD800C8630D /* Cache */,
+				834F9D6020D327050052D9EC /* Error */,
 				83CBAAD420D3094100C8630D /* Remote */,
 				83CBAAD320D3092F00C8630D /* Repository */,
 			);
@@ -267,7 +279,6 @@
 		83CBAAD420D3094100C8630D /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				834F9D6020D327050052D9EC /* Error */,
 				83CBAADE20D30B2000C8630D /* Endpoint */,
 				83CBAAD920D309FE00C8630D /* UrlRemoteDataSource.swift */,
 			);
@@ -277,7 +288,7 @@
 		83CBAAD520D3096100C8630D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				83CBAAD720D3099000C8630D /* UrlModel.swift */,
+				83CBAAD720D3099000C8630D /* ShortUrlModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,13 +299,6 @@
 				83CBAAE120D30D7B00C8630D /* GetShortenerUrlUseCase.swift */,
 			);
 			path = "Use Case";
-			sourceTree = "<group>";
-		};
-		83CBAADD20D30AD800C8630D /* Cache */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cache;
 			sourceTree = "<group>";
 		};
 		83CBAADE20D30B2000C8630D /* Endpoint */ = {
@@ -329,8 +333,10 @@
 		83DA7D6920CCC49C001B2002 /* Thing */ = {
 			isa = PBXGroup;
 			children = (
-				83CBAAD220D3084E00C8630D /* Domain */,
+				834F9D6A20D341260052D9EC /* Configuration */,
+				834F9D6320D33B8B0052D9EC /* Common */,
 				83CBAAD120D3084A00C8630D /* Data */,
+				83CBAAD220D3084E00C8630D /* Domain */,
 				83A5B9DD20CE098600D0ED18 /* Presentation */,
 				83DA7D6A20CCC49D001B2002 /* AppDelegate.swift */,
 				83DA7D6C20CCC49D001B2002 /* ViewController.swift */,
@@ -536,25 +542,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				834F9D5D20D326090052D9EC /* GetShortenerUrlError.swift in Sources */,
-				838A945120CCE152007EBC2C /* Loadable.swift in Sources */,
 				83CBAAE220D30D7B00C8630D /* GetShortenerUrlUseCase.swift in Sources */,
 				834F9D5320D31FBF0052D9EC /* ShortenerPresenter.swift in Sources */,
 				83CBAADC20D30A0A00C8630D /* UrlRepository.swift in Sources */,
-				83CBAAD820D3099000C8630D /* UrlModel.swift in Sources */,
+				83CBAAD820D3099000C8630D /* ShortUrlModel.swift in Sources */,
 				838A944A20CCDE5B007EBC2C /* LoginViewController.swift in Sources */,
 				834F9D5F20D326B10052D9EC /* ErrorPresenter.swift in Sources */,
 				83A5B9DC20CE07D800D0ED18 /* LoginConfigurator.swift in Sources */,
-				838A945D20CDA22C007EBC2C /* FullScreenLoadingView.swift in Sources */,
 				834F9D5A20D323A10052D9EC /* ShortenerRouter.swift in Sources */,
 				8322DF0B20D0C2F5003F7541 /* ErrorDisplayerView.swift in Sources */,
 				834F9D6220D329830052D9EC /* DataError.swift in Sources */,
 				83CBAADA20D309FE00C8630D /* UrlRemoteDataSource.swift in Sources */,
 				83A5B9DA20CE069100D0ED18 /* LoginPresenter.swift in Sources */,
 				83CBAAE020D30B2B00C8630D /* UrlProvider.swift in Sources */,
+				834F9D6D20D341890052D9EC /* DependencyInjection.swift in Sources */,
 				83DA7D6D20CCC49D001B2002 /* ViewController.swift in Sources */,
 				834F9D5520D320340052D9EC /* ShortenerViewModels.swift in Sources */,
 				8322DF0D20D0CAB8003F7541 /* LoginRouter.swift in Sources */,
+				834F9D6720D33EB30052D9EC /* ScenesDependencyInjection.swift in Sources */,
 				83A5B9E620CE0E8F00D0ED18 /* DisplayableError.swift in Sources */,
+				834F9D6920D33ED80052D9EC /* ShortenerConfigurator.swift in Sources */,
+				834F9D6520D33B910052D9EC /* Result.swift in Sources */,
 				834F9D5120D31FAC0052D9EC /* ShortenerViewController.swift in Sources */,
 				83DA7D6B20CCC49D001B2002 /* AppDelegate.swift in Sources */,
 			);
