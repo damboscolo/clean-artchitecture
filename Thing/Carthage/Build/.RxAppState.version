@@ -1,0 +1,13 @@
+{
+  "commitish" : "1.1.2",
+  "iOS" : [
+    {
+      "hash" : "16c34cd90b5803f336f6e0a17c2e04ad050d4f6550e6ae82784739674a8c3cba",
+      "name" : "RxAppState"
+    },
+    {
+      "hash" : "16c34cd90b5803f336f6e0a17c2e04ad050d4f6550e6ae82784739674a8c3cba",
+      "name" : "RxAppState"
+    }
+  ]
+}

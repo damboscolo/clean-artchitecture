@@ -1,0 +1,9 @@
+{
+  "commitish" : "3.0.3",
+  "iOS" : [
+    {
+      "hash" : "cdce56a907ed57cc1b0b5a9c3c70162acb425008b6c761e4952c333bca91363b",
+      "name" : "CameraViewController"
+    }
+  ]
+}

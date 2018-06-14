@@ -16,6 +16,7 @@ struct AlertErrorContent {
 enum ErrorType {
     case alert(content: AlertErrorContent)
     case toast
+    case silent
 }
 
 enum ErrorEffect {
@@ -29,7 +30,7 @@ struct DisplayableError: Error {
     let type: ErrorType
     let effect: ErrorEffect
     
-    init(type: ErrorType?, effect: ErrorEffect?) {
+    init(type: ErrorType? = nil, effect: ErrorEffect? = nil) {
         guard let type = type, let effect = effect else {
             //Fallback to generic error
             self.type = .alert(content: AlertErrorContent(title: "Generic error", message: "Sorry"))

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LoginViewProtocol: class, ErrorDisplayer {
+protocol LoginViewProtocol: class, ErrorDisplayerView {
     var presenter: LoginPresenterProtocol! {get set}
 }
 

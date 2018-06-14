@@ -16,11 +16,11 @@ struct LoginRouter: LoginRouterProtocol {
     var view: LoginViewProtocol!
     
     func navigateToHome() {
-        guard let viewController = view as? UIViewController else {
-            return
-        }
-        let nextViewController = HomeViewController.loadFromNib()
-        let nav = UINavigationController(rootViewController: nextViewController)
-        viewController.present(nav, animated: true)
+//        guard let viewController = view as? UIViewController else {
+//            return
+//        }
+//        let nextViewController = HomeViewController.loadFromNib()
+//        let nav = UINavigationController(rootViewController: nextViewController)
+//        viewController.present(nav, animated: true)
     }
 }
