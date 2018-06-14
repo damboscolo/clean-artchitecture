@@ -1,0 +1,27 @@
+{
+  "Mac" : [
+    {
+      "name" : "SwiftyUserDefaults",
+      "hash" : "ded09b61fdcaff63fcff7587de368e6221cd150e65f54ded1cfd4273a1f6cde3"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "SwiftyUserDefaults",
+      "hash" : "d02d6006822eedb177ad6a1e8a737b2e3892980c785d654a9a1884c0bb6cbad0"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "SwiftyUserDefaults",
+      "hash" : "491aab23683f0a071a478627dbfe85211b3115164d33dcb4be0cec56db18d37c"
+    }
+  ],
+  "commitish" : "4.0.0-alpha.1",
+  "iOS" : [
+    {
+      "name" : "SwiftyUserDefaults",
+      "hash" : "34727e7905cf01d355b5a1ba95cf538fab11e40c434cfe1f1707383ea6461497"
+    }
+  ]
+}

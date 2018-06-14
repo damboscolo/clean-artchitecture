@@ -1,0 +1,27 @@
+{
+  "Mac" : [
+    {
+      "name" : "Swinject",
+      "hash" : "0c74335777f23b1afeef0827f4439433adff6e89cfef41654097848ceca63583"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "Swinject",
+      "hash" : "426201306a789f4ed41c1d11e7d1c2132a693ceef5eddeb3c4f7aa0d3a7f6119"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "Swinject",
+      "hash" : "b720afbb1485bdfabb4f8659cab9c28155aac7eee4914f736488ad74e0c2dd4b"
+    }
+  ],
+  "commitish" : "2.4.1",
+  "iOS" : [
+    {
+      "name" : "Swinject",
+      "hash" : "5a0b2ffb0f9364fd1a874f799000a36d2b5c12c14bba6f820494588d8dc5a986"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Mac" : [
+    {
+      "name" : "SwinjectAutoregistration",
+      "hash" : "8726aaeac2640c9c29782d54ded74d763be37dfa23ce93bde8a4937a592915c8"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "SwinjectAutoregistration",
+      "hash" : "d17ba7e17369ba7d15453af07289bbe1c785ff7a396fec782260142199ef8c92"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "SwinjectAutoregistration",
+      "hash" : "cba8e4411dec56fcd8935c13bc5f6a772f1da605cffecc7f9529c49528673b50"
+    }
+  ],
+  "commitish" : "2.1.0",
+  "iOS" : [
+    {
+      "name" : "SwinjectAutoregistration",
+      "hash" : "22f8f29f24ea66841fc3fa5d55705a7c09dda19a80fb0b0779e1de446b794410"
+    }
+  ]
+}
