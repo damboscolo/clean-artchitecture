@@ -8,9 +8,12 @@
 
 import Foundation
 import SwinjectStoryboard
+import Swinject
 
 extension SwinjectStoryboard {
     @objc class func setup() {
+        Container.loggingFunction = nil
+
         ScenesDependencyInjection.register(with: defaultContainer)
         UseCaseDependencyInjection.register(with: defaultContainer)
         DataSourceDependencyInjection.register(with: defaultContainer)

@@ -16,25 +16,23 @@ protocol ShortenerPresenterProtocol {
 
 struct ShortenerPresenter: ShortenerPresenterProtocol, ErrorPresenter {    
     var view: ShortenerView!
-    var router: ShortenerRouter!
     var getShortenerUrlUseCase: GetShortenerUrlUseCase!
     
     func shortUrl(_ url: String) {
-        
         view.showLoading()
         getShortenerUrlUseCase.execute(with: url) { (result) in
-            view.hideLoading()
+            self.view.hideLoading()
 
             switch result {
             case .success(let model):
-                let viewModel = ShortenerViewModels.ShortenerViewModel(url: model.base)
-                view.displayShortedUrl(viewModel)
+                let viewModel = ShortenerViewModels.ShortenerViewModel(url: model.alias)
+                self.view.displayShortedUrl(viewModel)
                 
             case .failure(let error):
-                if let genericError = handleGenericError(error) {
-                    view.display(genericError)
+                if let genericError = self.handleGenericError(error) {
+                    self.view.display(genericError)
                 } else {
-                    view.display(handleSpecificError(error))
+                    self.view.display(self.handleSpecificError(error))
                 }
             }
         }

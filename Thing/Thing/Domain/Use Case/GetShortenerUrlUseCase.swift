@@ -11,13 +11,13 @@ import Foundation
 struct GetShortenerUrlUseCase {
     var repository: UrlRepository
     
-    func execute(with url: String, completion: ((Result<ShortUrlModel>) -> Void)) {
-        if url.count > 4 {
-            completion(.failure((GetShortenerUrlError.invalidFormat)))
-            return
-        }
-        
-        repository.getShortenerUrl(from: url, completion: completion)
+    func execute(with url: String, completion: @escaping ((Result<ShortUrlModel>) -> Void)) {
+//        if url.count > 4 {
+//            completion(.failure((GetShortenerUrlError.invalidFormat)))
+//            return
+//        }
+//        
+        repository.getShortUrl(from: url, completion: completion)
     }
 }
 

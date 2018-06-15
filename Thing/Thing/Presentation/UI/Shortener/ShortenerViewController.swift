@@ -16,8 +16,8 @@ protocol ShortenerView: ErrorDisplayerView {
 }
 
 class ShortenerViewController: UIViewController, ShortenerView {
-
     var presenter: ShortenerPresenter!
+    var router: ShortenerRouter!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,6 +33,7 @@ class ShortenerViewController: UIViewController, ShortenerView {
     
     func displayShortedUrl(_ viewModel: ShortenerViewModels.ShortenerViewModel) {
         // display
+        router.navigateToNext()
     }
     
     func showLoading() {
@@ -41,5 +42,9 @@ class ShortenerViewController: UIViewController, ShortenerView {
     
     func hideLoading() {
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        router.passDataToNextScene(segue)
     }
 }

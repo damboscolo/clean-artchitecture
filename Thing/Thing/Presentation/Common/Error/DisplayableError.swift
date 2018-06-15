@@ -20,10 +20,10 @@ enum ErrorType {
 }
 
 enum ErrorEffect {
-    case none
     case goBack
     case dismiss
     case terminate
+    case none
 }
 
 struct DisplayableError: Error {
@@ -31,13 +31,13 @@ struct DisplayableError: Error {
     let effect: ErrorEffect
     
     init(type: ErrorType? = nil, effect: ErrorEffect? = nil) {
-        guard let type = type, let effect = effect else {
+        guard let type = type else {
             //Fallback to generic error
-            self.type = .alert(content: AlertErrorContent(title: "Generic error", message: "Sorry"))
+            self.type = .alert(content: AlertErrorContent(title: "Erro inesperado", message: "Tente novamente mais tarde"))
             self.effect = .none
             return
         }
         self.type = type
-        self.effect = effect
+        self.effect = effect ?? .none
     }
 }

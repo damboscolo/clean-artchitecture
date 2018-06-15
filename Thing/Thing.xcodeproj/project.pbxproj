@@ -15,16 +15,19 @@
 		834F9D5A20D323A10052D9EC /* ShortenerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D5920D323A10052D9EC /* ShortenerRouter.swift */; };
 		834F9D5D20D326090052D9EC /* GetShortenerUrlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D5C20D326090052D9EC /* GetShortenerUrlError.swift */; };
 		834F9D5F20D326B10052D9EC /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D5E20D326B10052D9EC /* ErrorPresenter.swift */; };
-		834F9D6220D329830052D9EC /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6120D329830052D9EC /* DataError.swift */; };
+		834F9D6220D329830052D9EC /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6120D329830052D9EC /* HTTPError.swift */; };
 		834F9D6520D33B910052D9EC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6420D33B910052D9EC /* Result.swift */; };
-		834F9D6720D33EB30052D9EC /* ScenesDependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6620D33EB30052D9EC /* ScenesDependencyInjection.swift */; };
+		834F9D6720D33EB30052D9EC /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6620D33EB30052D9EC /* DependencyInjection.swift */; };
 		834F9D6920D33ED80052D9EC /* ShortenerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6820D33ED80052D9EC /* ShortenerConfigurator.swift */; };
-		834F9D6D20D341890052D9EC /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6C20D341890052D9EC /* DependencyInjection.swift */; };
+		834F9D6D20D341890052D9EC /* Swinject+DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834F9D6C20D341890052D9EC /* Swinject+DependencyInjection.swift */; };
+		83769A6D20D3CEDF00E1BE5D /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83769A6B20D3CEDF00E1BE5D /* IQKeyboardManager.framework */; };
+		83769A6E20D3CEDF00E1BE5D /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83769A6C20D3CEDF00E1BE5D /* IQKeyboardManagerSwift.framework */; };
+		83769A7320D3DC0000E1BE5D /* JSONEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83769A7220D3DC0000E1BE5D /* JSONEncoding.swift */; };
+		83769A7620D3E14000E1BE5D /* Moya+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83769A7520D3E14000E1BE5D /* Moya+Decodable.swift */; };
 		838A943D20CCCFDB007EBC2C /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DA7D9C20CCCBDE001B2002 /* RxBlocking.framework */; };
 		838A943E20CCCFDB007EBC2C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DA7D9920CCCBDD001B2002 /* RxCocoa.framework */; };
 		838A943F20CCCFDB007EBC2C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DA7D9A20CCCBDD001B2002 /* RxSwift.framework */; };
 		838A944A20CCDE5B007EBC2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A944820CCDE5B007EBC2C /* LoginViewController.swift */; };
-		838A944B20CCDE5B007EBC2C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 838A944920CCDE5B007EBC2C /* LoginViewController.xib */; };
 		83A5B9D620CDFE8400D0ED18 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A5B9D520CDFE8400D0ED18 /* SnapKit.framework */; };
 		83A5B9DA20CE069100D0ED18 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5B9D920CE069100D0ED18 /* LoginPresenter.swift */; };
 		83A5B9DC20CE07D800D0ED18 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5B9DB20CE07D800D0ED18 /* LoginConfigurator.swift */; };
@@ -37,7 +40,7 @@
 		83CBAAD820D3099000C8630D /* ShortUrlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBAAD720D3099000C8630D /* ShortUrlModel.swift */; };
 		83CBAADA20D309FE00C8630D /* UrlRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBAAD920D309FE00C8630D /* UrlRemoteDataSource.swift */; };
 		83CBAADC20D30A0A00C8630D /* UrlRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBAADB20D30A0A00C8630D /* UrlRepository.swift */; };
-		83CBAAE020D30B2B00C8630D /* UrlProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBAADF20D30B2B00C8630D /* UrlProvider.swift */; };
+		83CBAAE020D30B2B00C8630D /* UrlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBAADF20D30B2B00C8630D /* UrlTarget.swift */; };
 		83CBAAE220D30D7B00C8630D /* GetShortenerUrlUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBAAE120D30D7B00C8630D /* GetShortenerUrlUseCase.swift */; };
 		83DA7D6B20CCC49D001B2002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA7D6A20CCC49D001B2002 /* AppDelegate.swift */; };
 		83DA7D6D20CCC49D001B2002 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA7D6C20CCC49D001B2002 /* ViewController.swift */; };
@@ -74,13 +77,16 @@
 		834F9D5920D323A10052D9EC /* ShortenerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortenerRouter.swift; sourceTree = "<group>"; };
 		834F9D5C20D326090052D9EC /* GetShortenerUrlError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShortenerUrlError.swift; sourceTree = "<group>"; };
 		834F9D5E20D326B10052D9EC /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
-		834F9D6120D329830052D9EC /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		834F9D6120D329830052D9EC /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		834F9D6420D33B910052D9EC /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		834F9D6620D33EB30052D9EC /* ScenesDependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenesDependencyInjection.swift; sourceTree = "<group>"; };
+		834F9D6620D33EB30052D9EC /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 		834F9D6820D33ED80052D9EC /* ShortenerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortenerConfigurator.swift; sourceTree = "<group>"; };
-		834F9D6C20D341890052D9EC /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		834F9D6C20D341890052D9EC /* Swinject+DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swinject+DependencyInjection.swift"; sourceTree = "<group>"; };
+		83769A6B20D3CEDF00E1BE5D /* IQKeyboardManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManager.framework; path = Carthage/Build/iOS/IQKeyboardManager.framework; sourceTree = "<group>"; };
+		83769A6C20D3CEDF00E1BE5D /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
+		83769A7220D3DC0000E1BE5D /* JSONEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoding.swift; sourceTree = "<group>"; };
+		83769A7520D3E14000E1BE5D /* Moya+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Decodable.swift"; sourceTree = "<group>"; };
 		838A944820CCDE5B007EBC2C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		838A944920CCDE5B007EBC2C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		83A5B9D520CDFE8400D0ED18 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		83A5B9D920CE069100D0ED18 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		83A5B9DB20CE07D800D0ED18 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
@@ -93,7 +99,7 @@
 		83CBAAD720D3099000C8630D /* ShortUrlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortUrlModel.swift; sourceTree = "<group>"; };
 		83CBAAD920D309FE00C8630D /* UrlRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlRemoteDataSource.swift; sourceTree = "<group>"; };
 		83CBAADB20D30A0A00C8630D /* UrlRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlRepository.swift; sourceTree = "<group>"; };
-		83CBAADF20D30B2B00C8630D /* UrlProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProvider.swift; sourceTree = "<group>"; };
+		83CBAADF20D30B2B00C8630D /* UrlTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlTarget.swift; sourceTree = "<group>"; };
 		83CBAAE120D30D7B00C8630D /* GetShortenerUrlUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShortenerUrlUseCase.swift; sourceTree = "<group>"; };
 		83DA7D6720CCC49C001B2002 /* Thing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83DA7D6A20CCC49D001B2002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +124,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83769A6D20D3CEDF00E1BE5D /* IQKeyboardManager.framework in Frameworks */,
+				83769A6E20D3CEDF00E1BE5D /* IQKeyboardManagerSwift.framework in Frameworks */,
 				83CBAAD020D3071400C8630D /* Result.framework in Frameworks */,
 				83CBAACB20D3062700C8630D /* Alamofire.framework in Frameworks */,
 				83CBAACC20D3062700C8630D /* Moya.framework in Frameworks */,
@@ -170,7 +178,7 @@
 		834F9D6020D327050052D9EC /* Error */ = {
 			isa = PBXGroup;
 			children = (
-				834F9D6120D329830052D9EC /* DataError.swift */,
+				834F9D6120D329830052D9EC /* HTTPError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -186,18 +194,27 @@
 		834F9D6A20D341260052D9EC /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				834F9D6B20D341310052D9EC /* Depnedency Injection */,
+				834F9D6B20D341310052D9EC /* Dependency Injection */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
 		};
-		834F9D6B20D341310052D9EC /* Depnedency Injection */ = {
+		834F9D6B20D341310052D9EC /* Dependency Injection */ = {
 			isa = PBXGroup;
 			children = (
-				834F9D6C20D341890052D9EC /* DependencyInjection.swift */,
-				834F9D6620D33EB30052D9EC /* ScenesDependencyInjection.swift */,
+				834F9D6C20D341890052D9EC /* Swinject+DependencyInjection.swift */,
+				834F9D6620D33EB30052D9EC /* DependencyInjection.swift */,
 			);
-			path = "Depnedency Injection";
+			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
+		83769A7420D3E13700E1BE5D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				83769A7520D3E14000E1BE5D /* Moya+Decodable.swift */,
+				83769A7220D3DC0000E1BE5D /* JSONEncoding.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		838A944520CCDE39007EBC2C /* Login */ = {
@@ -207,7 +224,6 @@
 				83A5B9D920CE069100D0ED18 /* LoginPresenter.swift */,
 				8322DF0C20D0CAB8003F7541 /* LoginRouter.swift */,
 				838A944820CCDE5B007EBC2C /* LoginViewController.swift */,
-				838A944920CCDE5B007EBC2C /* LoginViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -279,6 +295,7 @@
 		83CBAAD420D3094100C8630D /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				83769A7420D3E13700E1BE5D /* Common */,
 				83CBAADE20D30B2000C8630D /* Endpoint */,
 				83CBAAD920D309FE00C8630D /* UrlRemoteDataSource.swift */,
 			);
@@ -304,7 +321,7 @@
 		83CBAADE20D30B2000C8630D /* Endpoint */ = {
 			isa = PBXGroup;
 			children = (
-				83CBAADF20D30B2B00C8630D /* UrlProvider.swift */,
+				83CBAADF20D30B2B00C8630D /* UrlTarget.swift */,
 			);
 			path = Endpoint;
 			sourceTree = "<group>";
@@ -369,6 +386,8 @@
 		83DA7D9820CCCBDD001B2002 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83769A6B20D3CEDF00E1BE5D /* IQKeyboardManager.framework */,
+				83769A6C20D3CEDF00E1BE5D /* IQKeyboardManagerSwift.framework */,
 				83CBAACF20D3071400C8630D /* Result.framework */,
 				83CBAAC720D3062700C8630D /* Alamofire.framework */,
 				83CBAAC820D3062700C8630D /* Moya.framework */,
@@ -490,7 +509,6 @@
 				83DA7D7520CCC4A3001B2002 /* LaunchScreen.storyboard in Resources */,
 				83DA7D7220CCC4A3001B2002 /* Assets.xcassets in Resources */,
 				83DA7D7020CCC49D001B2002 /* Main.storyboard in Resources */,
-				838A944B20CCDE5B007EBC2C /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +544,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManager.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManagerSwift.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -548,18 +568,20 @@
 				83CBAAD820D3099000C8630D /* ShortUrlModel.swift in Sources */,
 				838A944A20CCDE5B007EBC2C /* LoginViewController.swift in Sources */,
 				834F9D5F20D326B10052D9EC /* ErrorPresenter.swift in Sources */,
+				83769A7620D3E14000E1BE5D /* Moya+Decodable.swift in Sources */,
 				83A5B9DC20CE07D800D0ED18 /* LoginConfigurator.swift in Sources */,
 				834F9D5A20D323A10052D9EC /* ShortenerRouter.swift in Sources */,
 				8322DF0B20D0C2F5003F7541 /* ErrorDisplayerView.swift in Sources */,
-				834F9D6220D329830052D9EC /* DataError.swift in Sources */,
+				834F9D6220D329830052D9EC /* HTTPError.swift in Sources */,
 				83CBAADA20D309FE00C8630D /* UrlRemoteDataSource.swift in Sources */,
 				83A5B9DA20CE069100D0ED18 /* LoginPresenter.swift in Sources */,
-				83CBAAE020D30B2B00C8630D /* UrlProvider.swift in Sources */,
-				834F9D6D20D341890052D9EC /* DependencyInjection.swift in Sources */,
+				83CBAAE020D30B2B00C8630D /* UrlTarget.swift in Sources */,
+				834F9D6D20D341890052D9EC /* Swinject+DependencyInjection.swift in Sources */,
 				83DA7D6D20CCC49D001B2002 /* ViewController.swift in Sources */,
 				834F9D5520D320340052D9EC /* ShortenerViewModels.swift in Sources */,
 				8322DF0D20D0CAB8003F7541 /* LoginRouter.swift in Sources */,
-				834F9D6720D33EB30052D9EC /* ScenesDependencyInjection.swift in Sources */,
+				83769A7320D3DC0000E1BE5D /* JSONEncoding.swift in Sources */,
+				834F9D6720D33EB30052D9EC /* DependencyInjection.swift in Sources */,
 				83A5B9E620CE0E8F00D0ED18 /* DisplayableError.swift in Sources */,
 				834F9D6920D33ED80052D9EC /* ShortenerConfigurator.swift in Sources */,
 				834F9D6520D33B910052D9EC /* Result.swift in Sources */,

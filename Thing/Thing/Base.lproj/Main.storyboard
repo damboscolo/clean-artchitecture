@@ -21,10 +21,29 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Url" id="NB7-7E-tLF"/>
+                    <connections>
+                        <segue destination="k32-kl-MxK" kind="show" identifier="shortenerToLogin" id="VIn-5b-iuN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="988" y="769"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="K8a-lx-tgo">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k32-kl-MxK" customClass="LoginViewController" customModule="Thing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RPX-9F-2jT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ces-HV-RFI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="xyg-ch-595"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wXd-fJ-WEZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2054" y="771"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WkT-r3-ROI">

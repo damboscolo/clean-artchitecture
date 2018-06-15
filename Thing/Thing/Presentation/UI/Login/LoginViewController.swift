@@ -14,17 +14,9 @@ protocol LoginViewProtocol: class, ErrorDisplayerView {
 
 class LoginViewController: UIViewController, LoginViewProtocol {
     var presenter: LoginPresenterProtocol!
+    var router: LoginRouter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        LoginConfigurator.shared.configure(with: self)
-        doLogin()
-    }
-    
-    func doLogin() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
-            guard let weakSelf = self else { return }
-            weakSelf.presenter.login()
-        }
     }
 }

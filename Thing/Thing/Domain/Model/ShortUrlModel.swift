@@ -8,6 +8,32 @@
 
 import Foundation
 
-struct ShortUrlModel {
-    let base: String
+struct ShortUrlModel: Decodable {
+    let alias: String
+    let link: LinkModel
+    
+    enum ShortUrlKeys: String, CodingKey {
+        case alias = "alias"
+        case link = "_link"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: ShortUrlKeys.self)
+        
+        alias = try container.decode(String.self, forKey: .alias)
+        link = try container.decode(LinkModel.self, forKey: .link)
+    }
+}
+
+struct LinkModel: Decodable {
+    let value: String
+    
+    enum LinkKeys: String, CodingKey {
+        case value = "self"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: LinkKeys.self)
+        value = try container.decode(String.self, forKey: .value)
+    }
 }

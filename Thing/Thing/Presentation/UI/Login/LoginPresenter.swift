@@ -21,12 +21,6 @@ protocol LoginPresenterProtocol {
 
 struct LoginPresenter: LoginPresenterProtocol {
     var view: LoginViewProtocol!
-    var router: LoginRouterProtocol!
     
-    func login() {
-        router.navigateToHome()
-        
-        // error
-//        view.display(DisplayableError(type: .alert(content: AlertErrorContent(title:"Login Error", message: "Try again later")), effect: .none))
-    }
+    func login() {}
 }

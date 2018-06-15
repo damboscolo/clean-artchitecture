@@ -7,18 +7,18 @@
 //
 
 import Foundation
+import SwinjectStoryboard
+import Swinject
 
 struct LoginConfigurator {
-    static let shared = LoginConfigurator()
-
-    func configure(with viewController: LoginViewProtocol) {
-        var router = LoginRouter()
-        router.view = viewController
-        
-        var presenter = LoginPresenter()
-        presenter.view = viewController
-        presenter.router = router
-        
-        viewController.presenter = presenter
+    static func configure(with container: Container) {
+        container.storyboardInitCompleted(LoginViewController.self) { (resolver, controller) in
+            var presenter = LoginPresenter()
+            let router = LoginRouter()
+            
+            controller.presenter = presenter
+            controller.router = router
+            presenter.view = controller
+        }
     }
 }

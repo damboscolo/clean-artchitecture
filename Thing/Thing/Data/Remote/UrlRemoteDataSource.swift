@@ -12,7 +12,19 @@ import Moya
 struct UrlRemoteDataSource: UrlDataSource {
     let provider = MoyaProvider<UrlTarget>()
 
-    func getShortenerUrl(from url: String, completion: ((Result<ShortUrlModel>) -> Void)) {
-        completion(.success(ShortUrlModel(base: "daniele")))
+    func getShortUrl(from url: String, completion: @escaping ((Result<ShortUrlModel>) -> Void)) {
+        provider.request(.shorten(url: url)) { (result) in
+            switch result {
+            case .success(let response):
+                do {
+                    let model = try response.map(to: ShortUrlModel.self)
+                    completion(.success(model))
+                } catch {
+                    completion(.failure(GenericError.jsonSerialization))
+                }
+            case .failure(let error):
+                completion(.failure(error.mapToGenericError()))
+            }
+        }
     }
 }

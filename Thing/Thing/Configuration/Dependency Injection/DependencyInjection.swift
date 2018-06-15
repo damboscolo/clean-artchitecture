@@ -31,7 +31,6 @@ struct DataSourceDependencyInjection {
     }
 }
 
-
 struct RepositoryDependencyInjection {
     static func register(with container: Container) {
         container.register(UrlRepository.self) { (resolver) -> UrlRepository in

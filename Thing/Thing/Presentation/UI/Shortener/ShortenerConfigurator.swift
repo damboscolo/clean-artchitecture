@@ -17,7 +17,7 @@ struct ShortenerConfigurator {
             var router = ShortenerRouter()
             
             router.view = controller
-            presenter.router = router
+            controller.router = router
             presenter.view = controller
             presenter.getShortenerUrlUseCase = resolver.resolve(GetShortenerUrlUseCase.self)
             controller.presenter = presenter

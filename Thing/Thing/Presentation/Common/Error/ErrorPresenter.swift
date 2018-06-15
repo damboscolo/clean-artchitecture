@@ -14,18 +14,19 @@ protocol ErrorPresenter {
 
 extension ErrorPresenter {
     func handleGenericError(_ error: Error) -> DisplayableError? {
-        if let error = error as? DataError {
+        if let error = error as? GenericError {
             switch error {
             case .noInternetConnection:
                 return DisplayableError(type: .alert(content:
                     AlertErrorContent(title: "Internet connection problem",
-                                      message: "Verify your internet connection and try again later")),
-                                        effect: .none)
+                                      message: "Verify your internet connection and try again later")),effect: .none)
             case .timedOut:
                 return DisplayableError(type: .alert(content:
                     AlertErrorContent(title: "Timed out",
-                                      message: "")),
-                                        effect: .none)
+                                      message: "")), effect: .none)
+                
+            case .jsonSerialization:
+                return DisplayableError(type: .alert(content:AlertErrorContent(title: "Ocorreu um erro interno", message: "Tente novamente mais tarde")), effect: .none)
             default:
                 // Fallback to generic error
                 return DisplayableError()
